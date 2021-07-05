@@ -24,7 +24,8 @@ save=1
 
 
 [run]
-command=go run ./cmd/QtTranser  -inputFile ./trans_zh.ts -targetLang zh -outputFile writer_zh.ts
+; command=go run ./cmd/QtTranser  -inputFile ./trans_zh.ts -targetLang zh -outputFile writer_zh.ts
+command=go run ./cmd/FileTranser  -inputFile ./file.md -targetLang en -outputFile file_en.md
 cwd=$(VIM_ROOT) 
 output=quickfix
 errorformat=%f:%l:%m

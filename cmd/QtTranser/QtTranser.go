@@ -76,13 +76,6 @@ func Trans(args QtTransArgs) {
 	for i := 0; i < len(transData.Contexts); i++ {
 		ctx := &transData.Contexts[i]
 		for j := 0; j < len(ctx.Messages); j++ {
-
-			// <message>
-			//     <location filename="Qml/ContentData.js" line="14"/>
-			//     <source>徽章</source>
-			//     <translation type="unfinished"></translation>
-			// </message>
-
 			msg := &ctx.Messages[j]
 			if msg.Trans.Type != "unfinished" {
 				skipTranNum++

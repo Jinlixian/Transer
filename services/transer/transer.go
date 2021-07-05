@@ -8,7 +8,15 @@ type TransInput struct {
 	To     string
 }
 
-//TransOutput output
+type FileTransIntput struct {
+	Query      string
+	ID         string
+	Secret     string
+	To         string
+	InputFile  string
+	OutputFile string
+}
+
 type TransOutput struct {
 	Result string
 }
